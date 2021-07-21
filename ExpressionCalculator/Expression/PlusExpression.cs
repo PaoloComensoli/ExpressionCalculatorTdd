@@ -9,17 +9,17 @@ namespace ExpressionCalculator.Expression
     public class PlusExpression : IExpression
     {
         private readonly IExpression _firstAddend;
-        private readonly IExpression _secondAdded;
+        private readonly IExpression _secondAddend;
 
-        public PlusExpression(IExpression firstAddend, IExpression secondAdded)
+        public PlusExpression(IExpression firstAddend, IExpression secondAddend)
         {
             _firstAddend = firstAddend;
-            _secondAdded = secondAdded;
+            _secondAddend = secondAddend;
         }
 
         public double Evaluate()
         {
-            return _firstAddend.Evaluate() + _secondAdded.Evaluate();
+            return _firstAddend.Evaluate() + _secondAddend.Evaluate();
         }
     }
 }
