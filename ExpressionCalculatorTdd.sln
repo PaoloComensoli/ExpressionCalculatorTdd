@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressionCalculator", "ExpressionCalculator\ExpressionCalculator.csproj", "{DF2FF3FA-2CBB-4878-931E-27269C34ABDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressionCalculator.Test", "ExpressionCalculator.Test\ExpressionCalculator.Test.csproj", "{B7CA004F-1D92-4E2A-9F7B-6F5E500642E0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF2FF3FA-2CBB-4878-931E-27269C34ABDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF2FF3FA-2CBB-4878-931E-27269C34ABDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF2FF3FA-2CBB-4878-931E-27269C34ABDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF2FF3FA-2CBB-4878-931E-27269C34ABDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7CA004F-1D92-4E2A-9F7B-6F5E500642E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7CA004F-1D92-4E2A-9F7B-6F5E500642E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7CA004F-1D92-4E2A-9F7B-6F5E500642E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7CA004F-1D92-4E2A-9F7B-6F5E500642E0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C0B95A57-0ECB-4A3D-B23F-F90616D000F4}
+	EndGlobalSection
+EndGlobal
