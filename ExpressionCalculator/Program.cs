@@ -2,11 +2,17 @@
 
 namespace ExpressionCalculator
 {
-    class Program
+    public static class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Console.WriteLine("Hello World!");
+            Console.Write("Inserisci un'espressione aritmetica: ");
+            var expression = Console.ReadLine();
+
+            while (!expression.Equals("exit"))
+            {
+                //do something
+            }
         }
     }
 }

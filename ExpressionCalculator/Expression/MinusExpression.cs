@@ -21,5 +21,10 @@ namespace ExpressionCalculator.Expression
         {
             return _firstValue.Evaluate() - _secondValue.Evaluate();
         }
+
+        public IExpression Plus(IntExpression expression)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

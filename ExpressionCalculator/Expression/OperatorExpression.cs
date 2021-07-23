@@ -6,23 +6,26 @@ using System.Threading.Tasks;
 
 namespace ExpressionCalculator.Expression
 {
-    public class IntExpression : IExpression
+    public class OperatorExpression : IExpression
     {
-        private readonly int _value;
+        private readonly IExpression _acc;
+        private readonly char _op;
 
-        public IntExpression(int value)
+        public OperatorExpression(IExpression acc, char op)
         {
-            _value = value;
+            _acc = acc;
+            _op = op;
         }
+
 
         public double Evaluate()
         {
-            return _value;
+            return 0;
         }
 
         public IExpression Plus(IntExpression expression)
         {
-            return expression;
+            return new PlusExpression(_acc, expression);
         }
     }
 }

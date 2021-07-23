@@ -10,7 +10,14 @@ namespace ExpressionCalculator.Expression
     {
         public static IExpression Of(in string expressionStr)
         {
-            return new IntExpression(int.Parse(expressionStr));
+            return expressionStr.Aggregate(new EmptyExpression() as IExpression, (expression, c) =>
+            {
+                if (char.IsDigit(c)) return expression.Plus(new IntExpression(int.Parse(c.ToString())));
+                return new OperatorExpression(expression, c);
+
+            });
         }
     }
+
+    
 }

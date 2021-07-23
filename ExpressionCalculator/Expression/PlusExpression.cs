@@ -21,5 +21,10 @@ namespace ExpressionCalculator.Expression
         {
             return _firstAddend.Evaluate() + _secondAddend.Evaluate();
         }
+
+        public IExpression Plus(IntExpression expression)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
