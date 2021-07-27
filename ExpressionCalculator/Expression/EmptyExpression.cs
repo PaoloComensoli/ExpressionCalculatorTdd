@@ -12,12 +12,6 @@ namespace ExpressionCalculator.Expression
         {
             return 0;
         }
-
-        public IExpression Plus(IntExpression expression)
-        {
-            return expression;
-        }
-
         public IExpression And(IntExpression expr)
         {
             return expr;

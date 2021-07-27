@@ -24,10 +24,10 @@ namespace ExpressionCalculator.Expression
             return 0;
         }
 
-        public IExpression Plus(IntExpression expression)
-        {
-            return new PlusExpression(_acc, expression);
-        }
+        //public IExpression Plus(IntExpression expression)
+        //{
+        //    return new PlusExpression(_acc, expression);
+        //}
 
         public IExpression And(IntExpression expression)
         {

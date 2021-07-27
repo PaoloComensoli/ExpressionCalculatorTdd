@@ -22,11 +22,6 @@ namespace ExpressionCalculator.Expression
             return _firstAddend.Evaluate() + _secondAddend.Evaluate();
         }
 
-        public IExpression Plus(IntExpression expression)
-        {
-            throw new NotImplementedException();
-        }
-
         public IExpression And(IntExpression expr)  => new PlusExpression(_firstAddend, _secondAddend.And(expr));
     }
 }

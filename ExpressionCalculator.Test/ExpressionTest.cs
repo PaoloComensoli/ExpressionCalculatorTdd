@@ -44,6 +44,10 @@ namespace ExpressionCalculator.Test
         [InlineData("1+110", 111)]
         [InlineData("110-1", 109)]
         [InlineData("110-10", 100)]
+        [InlineData("1+2+3", 6)]
+        [InlineData("1+2-3", 0)]
+        [InlineData("1-2+3", 2)]
+        [InlineData("1-2+30 - 2", 27)]
         public void CanParseAnExpression(string expression, double expectedResult)
         {
             Assert.Equal(expectedResult,Expr.Of(expression).Evaluate());

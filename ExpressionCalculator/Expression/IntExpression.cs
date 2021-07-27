@@ -25,11 +25,6 @@ namespace ExpressionCalculator.Expression
             return _value;
         }
 
-        public IExpression Plus(IntExpression expression)
-        {
-            return expression;
-        }
-
         public IExpression And(IntExpression expr)
         {
             return new IntExpression(_value * 10 + expr._value);

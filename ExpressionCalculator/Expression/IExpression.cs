@@ -10,6 +10,5 @@ namespace ExpressionCalculator.Expression
     {
         double Evaluate();
         public IExpression And(IntExpression expr);
-        public IExpression Plus(IntExpression expression);
     }
 }
