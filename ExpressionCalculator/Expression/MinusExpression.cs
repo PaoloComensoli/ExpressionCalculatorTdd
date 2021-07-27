@@ -26,5 +26,10 @@ namespace ExpressionCalculator.Expression
         {
             throw new NotImplementedException();
         }
+
+        public IExpression And(IntExpression expr)
+        {
+            return new MinusExpression(_firstValue, _secondValue.And((expr)));
+        }
     }
 }

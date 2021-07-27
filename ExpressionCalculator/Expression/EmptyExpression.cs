@@ -17,5 +17,10 @@ namespace ExpressionCalculator.Expression
         {
             return expression;
         }
+
+        public IExpression And(IntExpression expr)
+        {
+            return expr;
+        }
     }
 }

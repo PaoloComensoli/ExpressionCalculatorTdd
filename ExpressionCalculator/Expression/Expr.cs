@@ -12,7 +12,8 @@ namespace ExpressionCalculator.Expression
         {
             return expressionStr.Aggregate(new EmptyExpression() as IExpression, (expression, c) =>
             {
-                if (char.IsDigit(c)) return expression.Plus(new IntExpression(int.Parse(c.ToString())));
+                if (char.IsDigit(c)) return expression.And(new IntExpression(int.Parse(c.ToString())));
+                if (char.IsWhiteSpace(c)) return expression;
                 return new OperatorExpression(expression, c);
 
             });

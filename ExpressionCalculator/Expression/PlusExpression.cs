@@ -26,5 +26,7 @@ namespace ExpressionCalculator.Expression
         {
             throw new NotImplementedException();
         }
+
+        public IExpression And(IntExpression expr)  => new PlusExpression(_firstAddend, _secondAddend.And(expr));
     }
 }

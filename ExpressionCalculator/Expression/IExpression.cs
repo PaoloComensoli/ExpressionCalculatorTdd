@@ -9,6 +9,7 @@ namespace ExpressionCalculator.Expression
     public interface IExpression
     {
         double Evaluate();
+        public IExpression And(IntExpression expr);
         public IExpression Plus(IntExpression expression);
     }
 }

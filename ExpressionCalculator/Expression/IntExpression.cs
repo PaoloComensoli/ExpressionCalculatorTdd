@@ -15,6 +15,11 @@ namespace ExpressionCalculator.Expression
             _value = value;
         }
 
+        public IntExpression(double value)
+        {
+            _value = (int) value;
+        }
+
         public double Evaluate()
         {
             return _value;
@@ -23,6 +28,11 @@ namespace ExpressionCalculator.Expression
         public IExpression Plus(IntExpression expression)
         {
             return expression;
+        }
+
+        public IExpression And(IntExpression expr)
+        {
+            return new IntExpression(_value * 10 + expr._value);
         }
     }
 }
